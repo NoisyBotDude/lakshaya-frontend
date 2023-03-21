@@ -46,7 +46,7 @@ export default function SignUp() {
                 const userId = response.user.uid;
                 const registrationTime = response.user.metadata.createdAt;
                 axios.post("http://localhost:5000/user/add-user", {
-                    "user_id": uid,
+                    "user_id": userId,
                     
                 })
                 // fetch("/api/users", {
